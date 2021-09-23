@@ -35,6 +35,8 @@ h4 {
 	color:white !important;
 }
 
+
+
 .shipping-row {
 	background:linear-gradient(0deg, rgb(22, 22, 22), rgb(19, 18, 18))
 }
@@ -54,6 +56,14 @@ h4 {
 	left: 8%;
   }
 
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
   .image-header {
 	font-size: calc(0.4rem + 3.0vw);
   }
@@ -63,3 +73,44 @@ h4 {
 	  font-size: 4rem;
 	}
   }
+
+.block {
+	width: 600px;
+	height: 600px;
+  	overflow: hidden;
+}
+ 
+.responsive-img {
+	min-width: 100%;
+  	min-height: 100%;
+}
+ 
+ 
+@media screen and (min-width: 480px) {
+   .block {width: 100%}
+}
+
+@media screen and (max-width: 480px) {
+	.block {
+		max-width: 280px;
+		max-height: 280px;
+  		overflow: hidden;
+	}
+ }
+
+.custom-btn {
+    min-width: 188px !important;
+	
+}
+
+.left-middlend {
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
+
+.no-bullets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
