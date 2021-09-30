@@ -7,6 +7,18 @@ h4 {
 	font-family: 'Arimo', sans-serif;
 }
 
+
+
+.banner-line {
+	font-size: .7em;
+}
+
+@media (max-width: 767.98px) { 
+	.banner-line {
+		font-size: .7em;
+	}
+ }
+
 .image-header {
 	font-family: 'Arimo', sans-serif;;
 }
