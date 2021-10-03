@@ -7,6 +7,9 @@ h4 {
 	font-family: 'Arimo', sans-serif;
 }
 
+.under:hover {
+    text-decoration: underline;
+}
 
 
 .banner-line {
