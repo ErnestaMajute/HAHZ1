@@ -362,35 +362,49 @@
             <p class="col text-center text-light text-uppercase under display-font my-0 py-4 text-decoration-none">TAKE 10% OFF EVERYTHING USE CODE:GET10</p>
          </div>
       </div>
-   </section>     
-   <section class="second-section py-3">
+   </section>  
+   <section class="cards-section py-3">
       <div class="container-fluid">
          <div class="row w-sm-100 mx-md-5">
-            <div class="col-lg-6 col-12 px-0 pb-3">
-               <div class="container image-container block px-0 ">
-                  <img class="px-0 responsive-img" src="assets/images/IMG-20210819-WA0010.jpg" alt="Girl in a dress"
-                     width="100%">
-                  <div class="centered image-header lead">
-                     <button type="button" class="btn btn-outline-dark btn-lg border-1 rounded-0 custom-btn">Autumn
-                        Dresses</button>
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-sm-6  col-lg-3 my-2">
+                     <div class="card border-0 rounded-0 mx-auto" style="max-width: 30rem;">                       
+                        <div class="text-success">
+                           <img src="assets/images/edited5.png" class="card-img border-0 rounded-0" alt="...">
+                        </div>
+                        <div class="card-footer bg-black border-0 rounded-0 text-center"><a class="text-decoration-none text-light align-middle" href="#">LOUNGEWEAR</a></div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3 my-2">
+                     <div class="card border-0 rounded-0 mx-auto" style="max-width: 30rem;"> 
+                        <div class="text-success">
+                           <img src="assets/images/edited6.png" class="card-img border-0 rounded-0" alt="...">
+                        </div>
+                        <div class="card-footer bg-black border-0 rounded-0 text-center"><a class="text-decoration-none text-light align-middle" href="#">JACKETS/COATS</a></div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3 my-2">
+                     <div class="card border-0 rounded-0 mx-auto" style="max-width: 30rem;">
+                        <div class="text-success">
+                           <img src="assets/images/IMG-20210819-WA0010.jpg" class="card-img border-0 rounded-0" alt="...">
+                        </div>
+                        <div class="card-footer bg-black text-light border-0 rounded-0 text-center"><a class="text-decoration-none text-light align-middle" href="#">DRESSES</a></div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3 my-2">
+                     <div class="card border-0 rounded-0 mx-auto" style="max-width: 30rem;">                        
+                        <div class="text-success">
+                           <img src="assets/images/edited7.png" class="card-img border-0 rounded-0" alt="...">
+                        </div>
+                        <div class="card-footer bg-black border-0 rounded-0 text-center"><a class="text-decoration-none text-light align-middle" href="#">JUMPERS</a></div>
+                      </div>
                   </div>
                </div>
             </div>
-            <div class="col-lg-6 col-12 px-0 pb-3">
-               <div class="container image-container block px-0 pb-2">
-                  <img class="px-0 responsive-image" src="assets/images/IMG-20210831-WA0040.jpg" alt="Girl in a jacket"
-                     width="100%">
-                  <div class="centered image-header">
-                     <button type="button"
-                        class="btn btn-outline-dark btn-lg border-1 rounded-0 custom-btn">Vests</button>
-                  </div>
-               </div>
-            </div>
-
          </div>
       </div>
    </section>
-
    <section class="first-section py-3">
       <div class="container-fluid">
          <div class="row w-sm-100 mx-md-5">
@@ -404,55 +418,101 @@
       </div>
    </section>
    <footer class="footer-section text-dark">
-      <div class="container">
-         <div class="row">
-            <!-- Address Card -->
-            <div class="col-md-3 mb-3 mt-3">
-               <div class="py-4 h-100 px-3">
-                  <div class="text-start">
-                     <p class="lead">CUSTOMER CARE:</p>
-                     <ul class="no-bullets fw-light">
-                        <li>FAQ</li>
-                        <li>Return & Refund</li>
-                     </ul>
-                  </div>
+      <div class="container-fluid">
+         <div class="row w-sm-100 mx-md-5">
+            <div class="container">
+               <div class="row my-4 subscription-section">
+                  <h3 class="logo-font text-center mt-5 text-dark display-6">Subscribe</h3>
+                 <hr class="w-50 mx-auto mb-4 text-dark">
+                 <div class="text-center text-dark w-90 mb-5">
+                     <small class="">
+                         Subscribe for our news on the latest fashion trends, stock updates & get 5% off your 1st order
+                     </small>
+                 </div>
+                 <form class="text-center" action="{% url 'subscriptions_join' %}" method="POST">
+                     <div class="mb-3 text-center">
+                         <input type="email" class="form-control text-center rounded-0 w-75 mx-auto" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp" required>
+                         <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
+                     </div>
+                     <!-- Button to submit form -->
+                     <button type="submit" class="mx-auto mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase">SUBSCRIBE</button>
+                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                 </form>                                        
                </div>
-            </div>
-            <div class="col-md-3 mb-3 mt-3">
-               <div class="py-4 h-100 px-3">
-                  <div class="text-start">
-                     <p class="lead">ABOUT</p>
-                     <ul class="no-bullets fw-light">
-                        <li>Fashion</li>
-                        <li>News</li>
-                        <li>Milestones</li>
-                        <li>Contact</li>
-                     </ul>
+               <div class="row my-4">
+                  <h5 class="text-center my-4 logo-font">LEADING WHOLESALE SUPPLIER OF WOMEN'S FASHION CLOTHING</h5>
+                  <p class="text-center">Aliquam erat volutpat. Maecenas massa tortor, efficitur vehicula molestie sed, varius quis lectus. Phasellus accumsan semper eros. Duis varius gravida mi. Curabitur ex nunc, fermentum ac augue vel, tincidunt feugiat quam. Phasellus ac vulputate tortor. Curabitur hendrerit elit nec neque suscipit, eu pharetra ex bibendum. Donec pellentesque mattis enim, in finibus nisl rutrum nec. Cras sollicitudin elit vel molestie aliquam. Integer condimentum ante metus, ac pharetra nisi dignissim a. Vivamus in fermentum nisi, et hendrerit velit.</P>
+               </div> 
+               <div class="row text-center">
+                  <div class="col-lg-3 mb-3 mt-3">
+                     <div class="py-4 h-100 text-center">
+                        <h6 class="logo-font">FOLLOW US</h6>
+                        <div class="media-links col-12">
+                           <a href="#" class="link-secondary ms-2 fs-2"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#" class="link-secondary ms-2 fs-2"><i class="fab fa-twitter"></i></a>
+                           <a href="#" class="link-secondary ms-2 fs-2"><i class="fab fa-google-plus-g"></i></a>
+                           <a href="#" class="link-secondary ms-2 fs-2"><i class="fab fa-pinterest-p"></i></a>
+                           <a href="#" class="link-secondary ms-2 fs-2"><i class="fab fa-instagram"></i></a>
+                        </div>
+                     </div>
                   </div>
-               </div>
-            </div>
-            <div class="col-md-3 mb-3 mt-3">
-               <div class="py-4 h-100 px-3">
-                  <div class="text-start">
-                     <p class="lead">LEGAL</p>
-                     <ul class="no-bullets fw-light">
-                        <li>Privacy Policy</li>
-                        <li>Cokies policy</li>
-                        <li>General Terms</li>
-                        <li>Terms</li>
-                     </ul>
+                  <!-- Address Card -->
+                  <div class="col-lg-2 mb-3 mt-3">
+                     <div class="py-4 h-100">
+                        <div class="text-md-center">
+                           <h6 class="logo-font">YOUR ORDER</h6>
+                           <ul class="no-bullets fw-light">
+                              <li>Frequently Asked Questions</li>
+                              <li>How To Order Wholesale</li>
+                              <li>Delivery Information</li>
+                              <li>Size Guide UK-EU-US</li>
+                              <li>Our Returns Policy</li>
+                              <li>Log In To Your Account</li>
+                           </ul>
+                        </div>
+                     </div>
                   </div>
-               </div>
-            </div>
-            <div class="col-md-3 mb-3 mt-3">
-               <div class="py-4 h-100 px-3">
-                  <div class="text-start">
-                     <p class="lead">CONTACT US</p>
-                     <ul class="no-bullets fw-light">
-                        <li>Customer care</li>
-                        <li>Press</li>
-                        <li>Commercial</li>
-                     </ul>
+                  <div class="col-lg-2 mb-3 mt-3">
+                     <div class="py-4 h-100 px-3">
+                        <div class="text-center">
+                           <h6 class="logo-font">DELIVERY</h6>
+                           <ul class="no-bullets fw-light">
+                              <li>Europe Free Over €500*</li>
+                              <li>EuropeFree Over €500*</li>
+                              <li>Click and Collect UK</li>
+                              <li>Rest of World From £30</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2 mb-3 mt-3">
+                     <div class="py-4 h-100 px-3">
+                        <div class="text-center">
+                           <h6 class="logo-font">ABOUT US</h6>
+                           <ul class="no-bullets fw-light">
+                              <li>About HAHZ</li>
+                              <li>HAHZ Wholesale Blog</li>
+                              <li>###</li>
+                              <li>Customer reviews</li>
+                              <li>Stockists</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 mb-3 mt-3">
+                     <div class="py-4 h-100 px-3">
+                        <div class="text-center">
+                           <h6 class="logo-font">INFORMATION</h6>
+                           <ul class="no-bullets fw-light">
+                              <li>Contact Us</li>
+                              <li>Visit Our UK Showroom</li>
+                              <li>Use Of Cookies</li>
+                              <li>Site Map</li>
+                              <li>Privacy Policy</li>
+                              <li>Terms and Conditions</li>
+                           </ul>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -462,7 +522,7 @@
       <div class="container small text-center text-dark pb-3">
          HAHZ &copy; 2021
       </div>
-      </div>
+       fs-2
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

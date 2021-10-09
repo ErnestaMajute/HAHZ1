@@ -297,9 +297,16 @@ h4 {
 	}
 }
 
+.subscription-section {
+	background-color: #cfcfcf99;
+}
+
 .custom-btn {
 	min-width: 188px !important;
+}
 
+.card-footer {
+	height: 50px;
 }
 
 .left-middlend {
