@@ -227,15 +227,17 @@ h4 {
 	display: block;
 }
 
+.nav-selection {
+	background-color: #ffc98b;
+}
+
 .nav-selection:hover {
 	background-color: black;
 	color: white !important;
 }
 
-
-
-.shipping-row {
-	background: linear-gradient(0deg, rgb(22, 22, 22), rgb(19, 18, 18));
+.offer-color {
+	background-color: #ffc98b;
 }
 
 .winter-image {
