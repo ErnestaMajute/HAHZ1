@@ -21,6 +21,8 @@
             <div class="col-12 col-sm-6 text-center text-md-start">
                <a class="text-decoration-none text-dark mx-2" href="#"><i class="fas fa-phone-alt"></i> +44 (0) 161 843 3840</a>
                <a class="text-decoration-none text-dark" href="about.html"><i class="fas fa-envelope"></i> help@stylewisedirect.com</a>
+               <a class="text-decoration-none text-dark" href="product_detail.html"><i class=""></i>Product view (temp)</a>
+               <a class="text-decoration-none text-dark" href="about.html"><i class=""></i>About view (temp)</a>
             </div>
             <div class="col-12 col-sm-6 text-center text-md-end">
                <div class="nav-item dropdown">
@@ -130,8 +132,8 @@
                               <li class="nav-item border-end border-dark border-1 ">
                                  <a class="nav-link text-dark nav-selection" href="#">NEW IN</a>
                               </li>
-                              <li class="nav-item dropdown border-end border-dark border-1">
-                                 <a class="nav-link dropdown text-dark nav-selection" href="#" id="productsDropdown1" role="button"
+                              <li class="nav-item dropdown border-end border-dark border-1  nav-selection">
+                                 <a class="nav-link dropdown text-dark" href="#" id="productsDropdown1" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     CLOTHING
                                  </a>
@@ -146,8 +148,8 @@
                                     <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a></li>
                                  </ul>
                               </li>
-                              <li class="nav-item dropdown border-end border-dark border-1">
-                                 <a class="nav-link dropdown text-dark  nav-selection" href="#" id="productsDropdown2" role="button"
+                              <li class="nav-item dropdown border-end border-dark border-1  nav-selection">
+                                 <a class="nav-link dropdown text-dark" href="#" id="productsDropdown2" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     DRESSES
                                  </a>
@@ -162,8 +164,8 @@
                                     <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a></li>
                                  </ul>
                               </li>
-                              <li class="nav-item dropdown border-end border-dark border-1">
-                                 <a class="nav-link dropdown text-dark nav-selection" href="#" id="productsDropdown3" role="button"
+                              <li class="nav-item dropdown border-end border-dark border-1  nav-selection">
+                                 <a class="nav-link dropdown text-dark" href="#" id="productsDropdown3" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     TRENDS
                                  </a>
@@ -178,8 +180,8 @@
                                     <li><a class="dropdown-item" href="#">Lorem ipsum dolor sit amet</a></li>
                                  </ul>
                               </li>
-                              <li class="nav-item dropdown border-end border-dark border-1">
-                                 <a class="nav-link dropdown text-dark nav-selection" href="#" id="productsDropdown4" role="button"
+                              <li class="nav-item dropdown border-end border-dark border-1  nav-selection">
+                                 <a class="nav-link dropdown text-dark" href="#" id="productsDropdown4" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     PRE-ORDER
                                  </a>
@@ -239,7 +241,7 @@
                      <a class="nav-link text-dark bigger nav-selection" href="#">NEW IN</a>
                   </li>
                   <li class="nav-item dropdown border-end border-dark border-1">
-                     <a class="nav-link dropdown text-dark bigger nav-selection" href="#" id="productsDropdown1" role="button"
+                     <a class="nav-link dropdown text-dark bigger  nav-selection" href="#" id="productsDropdown1" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         CLOTHING
                      </a>
@@ -440,67 +442,66 @@
          </div>
       </div>
    </section>
-   <footer class="footer-section text-dark">
+   <footer id="footer">
       <div class="container-fluid">
          <div class="row w-sm-100 mx-md-5">
             <div class="container">
-               <div class="row my-4 subscription-section">
-                  <h3 class="logo-font text-center mt-5 text-dark display-6">Subscribe</h3>
-                 <hr class="w-50 mx-auto mb-4 text-dark">
-                 <div class="text-center text-dark w-90 mb-5">
-                     <small class="">
-                         Subscribe for our news on the latest fashion trends, stock updates & get 5% off your 1st order
-                     </small>
-                 </div>
-                 <form class="text-center" action="{% url 'subscriptions_join' %}" method="POST">
-                     <div class="mb-3 text-center">
-                         <input type="email" class="form-control text-center rounded-0 w-75 mx-auto" id="subscriptions-id"  placeholder="Your Email Address" name="subscription_email" aria-describedby="emailHelp" required>
-                         <div id="emailHelp" class="form-text small">We'll never share your email with anyone else.</div>
-                     </div>
-                     <!-- Button to submit form -->
-                     <button type="submit" class="mx-auto mt-5 mb-5 btn btn-dark rounded-0 btn btn-md  text-uppercase">SUBSCRIBE</button>
-                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                 </form>                                        
-               </div>
+               <hr class="w-100">
                <div class="row my-4">
                   <h5 class="text-center my-4 logo-font">LEADING WHOLESALE SUPPLIER OF WOMEN'S FASHION CLOTHING</h5>
                   <p class="text-center">Aliquam erat volutpat. Maecenas massa tortor, efficitur vehicula molestie sed, varius quis lectus. Phasellus accumsan semper eros. Duis varius gravida mi. Curabitur ex nunc, fermentum ac augue vel, tincidunt feugiat quam. Phasellus ac vulputate tortor. Curabitur hendrerit elit nec neque suscipit, eu pharetra ex bibendum. Donec pellentesque mattis enim, in finibus nisl rutrum nec. Cras sollicitudin elit vel molestie aliquam. Integer condimentum ante metus, ac pharetra nisi dignissim a. Vivamus in fermentum nisi, et hendrerit velit.</P>
                </div> 
+               <div class="row my-4 subscription-section">  
+                 <div class="footer-newsletter">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 my-3">
+                                <p class="text-dark text-center my-0">
+                                   Receive news on the latest fashion trends, stock updated & get 5% OFF your first order
+                                </p>
+                            </div>
+                            <div class="col-lg-6 my-3 text-dark">
+                                <form action="" method="post"> <input type="email" name="email"><input type="submit" value="Subscribe"> </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                     
+               </div>
                <div class="row text-center">
                   <div class="col-lg-3 mb-3 mt-3">
                      <div class="py-4 h-100 text-center">
                         <h6 class="logo-font">FOLLOW US</h6>
                         <div class="media-links col-12">
-                           <a href="#" class="ms-1 text-decoration-none">
-                              <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-                                 <i class="fab fa-facebook-f fa-stack-1x icon-color"></i>
-                              </span>
-                           </a>
-                           <a href="#" class="ms-1 text-decoration-none" >
-                              <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-                                 <i class="fab fa-twitter fa-stack-1x icon-color"></i>
-                              </span>
-                           </a>
-                           <a href="#" class="ms-1 text-decoration-none">
-                              <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-                                 <i class="fab fa-google-plus-g fa-stack-1x icon-color"></i>
-                              </span>
-                           </a>
-                           <a href="#" class="ms-1 text-decoration-none">
-                              <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-                                 <i class="fab fa-pinterest-p fa-stack-1x icon-color"></i>
-                              </span>
-                           </a>
-                           <a href="#" class="ms-1 text-decoration-none">
-                              <span class="fa-stack fa-lg">
-                                 <i class="fa fa-circle fa-stack-2x icon-background1"></i>
-                                 <i class="fab fa-instagram fa-stack-1x icon-color"></i>
-                              </span>
-                           </a>
+                            <a href="#" class="ms-1 text-decoration-none">
+                                <span class="fa-stack fa-lg">
+                                   <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+                                   <i class="fab fa-facebook-f fa-stack-1x icon-color"></i>
+                                </span>
+                             </a>
+                             <a href="#" class="ms-1 text-decoration-none" >
+                                <span class="fa-stack fa-lg">
+                                   <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+                                   <i class="fab fa-twitter fa-stack-1x icon-color"></i>
+                                </span>
+                             </a>
+                             <a href="#" class="ms-1 text-decoration-none">
+                                <span class="fa-stack fa-lg">
+                                   <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+                                   <i class="fab fa-google-plus-g fa-stack-1x icon-color"></i>
+                                </span>
+                             </a>
+                             <a href="#" class="ms-1 text-decoration-none">
+                                <span class="fa-stack fa-lg">
+                                   <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+                                   <i class="fab fa-pinterest-p fa-stack-1x icon-color"></i>
+                                </span>
+                             </a>
+                             <a href="#" class="ms-1 text-decoration-none">
+                                <span class="fa-stack fa-lg">
+                                   <i class="fa fa-circle fa-stack-2x icon-background1"></i>
+                                   <i class="fab fa-instagram fa-stack-1x icon-color"></i>
+                                </span>
+                             </a>
                         </div>
                      </div>
                   </div>
@@ -570,7 +571,6 @@
       <div class="container small text-center text-dark pb-3">
          HAHZ &copy; 2021
       </div>
-       fs-2
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
